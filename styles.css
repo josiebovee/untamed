@@ -1,0 +1,84 @@
+body {background-color: #CF6E9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+img{
+    max-height: 600px;
+    max-width: auto;
+}
+
+p {font-family: 'Teko', sans-serif;
+    color: white;}
+
+
+.title {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    font-size: 120px;
+}
+
+.squiggle {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    animation: squiggle_drop 2s;
+    
+    
+}
+.glennon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 110px;
+}
+
+.doyle {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 110px;
+}
+
+.glennon, .doyle {
+    opacity: 0;
+    animation: author_fade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+}
+
+.writing {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    transform: translate(-45%, 0%);
+    transition: transform 1s;
+    
+}
+
+.writing:hover {
+   transform: scale(1);
+}
+
+
+
+@keyframes author_fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes squiggle_drop {
+    0% {bottom:100%;}
+    100% {bottom: 10%;}
+}
+
+
+
+
+
